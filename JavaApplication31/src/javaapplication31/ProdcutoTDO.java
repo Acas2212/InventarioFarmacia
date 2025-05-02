@@ -6,7 +6,7 @@ package javaapplication31;
 
 /**
  *
- * @author angel
+ * @author usuario
  */
 public class ProdcutoTDO {
     private String nombre;

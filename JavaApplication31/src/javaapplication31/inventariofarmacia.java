@@ -1,17 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package javaapplication31;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author angel
- */
 public class inventariofarmacia {
-     private ProdcutoTDO[] productos = new ProdcutoTDO[100];
+
+    private ProdcutoTDO[] productos = new ProdcutoTDO[100];
     private int contadorProductos = 0;
 
     public void agregarProducto(ProdcutoTDO producto) {
@@ -37,21 +30,30 @@ public class inventariofarmacia {
         for (int i = 0; i < contadorProductos; i++) {
             ProdcutoTDO p = productos[i];
             sb.append(String.format("Nombre: %s | Código: %s | Precio: %.2f | Stock: %d\n",
-                p.getNombre(), p.getCodigoBarras(), p.getPrecioUnitario(), p.getCantidadStock()));
+                    p.getNombre(), p.getCodigoBarras(), p.getPrecioUnitario(), p.getCantidadStock()));
         }
         JOptionPane.showMessageDialog(null, sb.toString());
     }
 
-    public void venderProducto(String codigo, int cantidad) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public boolean venderProducto(String codigo, int cantidad) {
+        ProdcutoTDO producto = buscarProductoPorCodigo(codigo);
+        if (producto != null && producto.getCantidadStock() >= cantidad) {
+            producto.setCantidadStock(producto.getCantidadStock() - cantidad);
+            JOptionPane.showMessageDialog(null, "Venta realizada con éxito.");
+            return true;
+        }
+        JOptionPane.showMessageDialog(null, "Stock insuficiente o producto no encontrado.");
+        return false;
     }
 
-    /**
-     *
-     * @param codigo
-     * @param nuevoPrecio
-     */
-    public void actualizarPrecio(String codigo, double nuevoPrecio) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public boolean actualizarPrecio(String codigo, double nuevoPrecio) {
+        ProdcutoTDO producto = buscarProductoPorCodigo(codigo);
+        if (producto != null) {
+            producto.setPrecioUnitario(nuevoPrecio);
+            JOptionPane.showMessageDialog(null, "Precio actualizado.");
+            return true;
+        }
+        JOptionPane.showMessageDialog(null, "Producto no encontrado.");
+        return false;
     }
 }
