@@ -68,5 +68,9 @@ Este proyecto es una aplicación de escritorio desarrollada en **Java** utilizan
 ## 👨‍💻 Autor
 
 Desarrollado por **Andrés Castellanos**
-Link a video:         https://youtu.be/mwqOPbuKJ0M
-Carpeta con capturas: https://drive.google.com/drive/folders/1ll1uVyrE96NqHaoSP-_3t_cSNeef2MxV?usp=sharing
+- Link a video:          https://youtu.be/mwqOPbuKJ0M
+- video de correcciones: https://youtu.be/eZCmztF3agQ
+- Carpeta con capturas:  https://drive.google.com/drive/folders/1ll1uVyrE96NqHaoSP-_3t_cSNeef2MxV?usp=sharing
+
+## Comentario personal
+Tuve inconveniente en la primera subida, pero de los errores aprendemos, y este caso me reto a regresar y buscar que era lo que estaba mal con el codigo para cambiarlo y que nuevamente funcione como corresponde
