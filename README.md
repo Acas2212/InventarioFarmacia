@@ -36,7 +36,7 @@ Este proyecto es una aplicación de escritorio desarrollada en **Java** utilizan
 
 ---
 
-## ✅ Qué funcionalidades implementadas
+## ✅ Qué funcionalidades fueron implementadas
 
 - Interfaz gráfica con menús y botones funcionales.
 - Registro de nuevos productos con validación básica.
