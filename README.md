@@ -36,6 +36,28 @@ Este proyecto es una aplicación de escritorio desarrollada en **Java** utilizan
 
 ---
 
+## ✅ Qué funcionalidades implementadas
+
+- Interfaz gráfica con menús y botones funcionales.
+- Registro de nuevos productos con validación básica.
+- Consulta de productos existentes por nombre o código.
+- Proceso de venta que descuenta unidades del stock.
+- Actualización de datos de productos en el inventario.
+- Mensajes de error y confirmación para una mejor experiencia de usuario.
+
+---
+
+## 🧪 Instrucciones breves de uso
+
+1. Abre el proyecto en **NetBeans 25**.
+2. Ejecuta la clase principal (`JavaAplication31.java`).
+3. Usa la interfaz para:
+   - Agregar productos al inventario.
+   - Consultar información de productos.
+   - Realizar ventas (descuento de stock).
+   - Actualizar datos como precio o cantidad.
+4. Cierra la aplicación desde el menú o ventana cuando termines.
+
 ## 📌 Notas adicionales
 
 - El sistema no utiliza bases de datos; el inventario se almacena en memoria durante la ejecución.
@@ -46,3 +68,5 @@ Este proyecto es una aplicación de escritorio desarrollada en **Java** utilizan
 ## 👨‍💻 Autor
 
 Desarrollado por **Andrés Castellanos**
+Link a video:         https://youtu.be/mwqOPbuKJ0M
+Carpeta con capturas: https://drive.google.com/drive/folders/1ll1uVyrE96NqHaoSP-_3t_cSNeef2MxV?usp=sharing
